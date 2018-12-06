@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="JavaPlayground" default="compile" basedir=".">
+    <property name="classes.dir" location="bin"/>
+    <property name="src.dir" location="src"/>
+    <!-- 初始化任务 -->  
+    <target name="init">  
+        <echo message="  init ${init}   ..."/>    
+    </target>  
+
+    <!-- 编译 -->  
+    <target name="compile" depends="init">  
+        <delete dir="${classes.dir}" />  
+        <mkdir dir="${classes.dir}" />  
+        <javac srcdir="${src.dir}" destdir="${classes.dir}">  
+        </javac>  
+    </target> 
+</project>
