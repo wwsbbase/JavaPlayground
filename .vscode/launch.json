@@ -27,7 +27,7 @@
               "",
               "$(workspaceRoot)/bin"
             ],
-            "mainClass": "JavaPlayground",
+            "mainClass": "ClassLoaderTest",
             "args": ""
           }
     ]
