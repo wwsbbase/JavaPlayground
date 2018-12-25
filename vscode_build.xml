@@ -11,7 +11,8 @@
     <target name="compile" depends="init">  
         <delete dir="${classes.dir}" />  
         <mkdir dir="${classes.dir}" />  
-        <javac srcdir="${src.dir}" destdir="${classes.dir}">  
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" includeAntRuntime="false">  
+            <compilerarg value="-Xlint:unchecked" />
         </javac>  
     </target> 
 </project>

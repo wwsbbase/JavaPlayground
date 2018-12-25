@@ -17,7 +17,24 @@
         },
         {
             "type": "java",
-            "name": "Debug (Launch)",
+            "name": "Debug JavaPlayground",
+            "request": "launch",
+            "cwd": "bin",
+            "sourcePaths": [
+              "src"
+            ],
+            "classPaths": [
+              "",
+              "bin",
+            ],
+            "mainClass": "JavaPlayground",
+            "args": "",
+            "stopOnEntry": true,
+          },
+
+          {
+            "type": "java",
+            "name": "Debug ClassLoaderTest",
             "request": "launch",
             "cwd": "${workspaceFolder}/bin",
             "sourcePaths": [
@@ -25,10 +42,11 @@
             ],
             "classPaths": [
               "",
-              "$(workspaceRoot)/bin"
+              "$(workspaceRoot)/bin",
             ],
             "mainClass": "ClassLoaderTest",
-            "args": ""
+            "args": "",
+            "stopOnEntry": true,
           }
     ]
 }

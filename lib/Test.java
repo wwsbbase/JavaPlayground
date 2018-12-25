@@ -1,5 +1,4 @@
-// package com.frank.test;
-
+package com.wwsb.testClassLoader;
 public class Test {
 
     public void say(){

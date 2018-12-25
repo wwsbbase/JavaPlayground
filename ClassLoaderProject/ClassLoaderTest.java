@@ -8,7 +8,7 @@ public class ClassLoaderTest {
 
         DiskClassLoader diskLoader = new DiskClassLoader("../lib");
         try {
-            Class c = diskLoader.loadClass("com.wwsb.test.Test");
+            Class c = diskLoader.loadClass("com.wwsb.testClassLoader.Test");
 
             if(c != null){
                 try {

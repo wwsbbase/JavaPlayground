@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "shell",
-            "command": "ant",
+            "command": "ant -f vscode_build.xml",
             "group": {
                 "kind": "build",
                 "isDefault": true
