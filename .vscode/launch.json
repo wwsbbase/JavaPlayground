@@ -15,38 +15,39 @@
             "mainClass": "JavaPlayground",
             "args": ""
         },
-        {
-            "type": "java",
-            "name": "Debug JavaPlayground",
-            "request": "launch",
-            "cwd": "bin",
-            "sourcePaths": [
-              "src"
-            ],
-            "classPaths": [
-              "",
-              "bin",
-            ],
-            "mainClass": "JavaPlayground",
-            "args": "",
-            "stopOnEntry": true,
-          },
 
-          {
-            "type": "java",
-            "name": "Debug ClassLoaderTest",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/bin",
-            "sourcePaths": [
-              "$(workspaceRoot)/src"
-            ],
-            "classPaths": [
-              "",
-              "$(workspaceRoot)/bin",
-            ],
-            "mainClass": "ClassLoaderTest",
-            "args": "",
-            "stopOnEntry": true,
-          }
+        {
+          "type": "java",
+          "name": "Debug JavaPlayground",
+          "request": "launch",
+          "cwd": "${workspaceFolder}/bin",
+          "sourcePaths": [
+            "$(workspaceRoot)/src"
+          ],
+          "classPaths": [
+            "",
+            "$(workspaceRoot)/bin",
+          ],
+          "mainClass": "JavaPlayground",
+          "args": "",
+          "stopOnEntry": true,
+        },
+
+        {
+          "type": "java",
+          "name": "Debug ClassLoaderTest",
+          "request": "launch",
+          "cwd": "${workspaceFolder}/ClassLoaderProject/bin",
+          "sourcePaths": [
+            "$(workspaceRoot)/ClassLoaderProject/src"
+          ],
+          "classPaths": [
+            "",
+            "$(workspaceRoot)/ClassLoaderProject/bin",
+          ],
+          "mainClass": "ClassLoaderTest",
+          "args": "",
+          "stopOnEntry": false,
+        }
     ]
 }

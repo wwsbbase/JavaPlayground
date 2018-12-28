@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="JavaPlayground" default="compile" basedir=".">
+<project name="JavaPlayground" default="compile_ClassLoader" basedir=".">
     <property name="classes.dir" location="bin"/>
     <property name="src.dir" location="src"/>
+
+    <property name="classLoaderProject.src" location="ClassLoaderProject"/>
+    <property name="classLoaderProject.bin" location="ClassLoaderProject/bin"/>
+
     <!-- 初始化任务 -->  
     <target name="init">  
         <echo message="  init ${init}   ..."/>    
@@ -12,6 +16,14 @@
         <delete dir="${classes.dir}" />  
         <mkdir dir="${classes.dir}" />  
         <javac srcdir="${src.dir}" destdir="${classes.dir}" includeAntRuntime="false">  
+            <compilerarg value="-Xlint:unchecked" />
+        </javac>  
+    </target> 
+
+    <target name="compile_ClassLoader">  
+        <delete dir="${classLoaderProject.bin}" />  
+        <mkdir dir="${classLoaderProject.bin}" />  
+        <javac srcdir="${classLoaderProject.src}" destdir="${classLoaderProject.bin}" includeAntRuntime="false">  
             <compilerarg value="-Xlint:unchecked" />
         </javac>  
     </target> 

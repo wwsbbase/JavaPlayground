@@ -6,6 +6,8 @@ public class ClassLoaderTest {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
 
+        System.out.println("ClassLoaderTest main");
+
         DiskClassLoader diskLoader = new DiskClassLoader("../lib");
         try {
             Class c = diskLoader.loadClass("com.wwsb.testClassLoader.Test");
